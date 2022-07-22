@@ -9,8 +9,17 @@
 
 body {
     background-color: hsl(0, 0%, 87%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    Font size: 13px;
 }
 
+img {
+    float: left;
+}
+
+footer {
+    grid-area: footer;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -23,11 +32,11 @@ body {
 
 .container {
     display: grid;
-    grid-template-areas: "left middle right"
+    grid-template-areas:
     "left main right"
     "left footer right";
     grid-template-columns: 0.5fr 8fr 0.5fr;
-    grid-template-rows: 0.5fr 8fr 0.5fr;
+    grid-template-rows: 8fr 0.5fr;
 }
 
 .main {
@@ -39,16 +48,35 @@ body {
     "bottommain sidemain";
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
 
+.profile {
+    display: grid;
+    align-items: center;
+}
+
+.profileName {
+
+}
+
+.profileInfo {
+
+}
+
+.profilePic {
+    max-width: 30px;
 }
 
 .sideMain {
     grid-area: sidemain;
     background-color: hsl(0,0%,100%);
     color: hsl(219, 29%, 14%);
-    max-width: 225px;
+    max-width: 250px;
     padding: 20px;
     border-radius: 15px;
+    margin: 10px;
 }
 
 .topMain {
@@ -56,7 +84,7 @@ body {
     display: grid;
     grid-template-areas: "lefttop righttop";
     grid-template-columns: 2fr 1fr;
-    padding: 20px;
+    margin: 10px;
 }
 
 .leftTop {
@@ -66,10 +94,13 @@ body {
     margin-right: 10px;
     border-radius: 15px;
     padding: 20px;
+    background-image: url('/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
 }
 
 .rightTop {
     grid-area: righttop;
+    max-width: 250px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(217, 19%, 35%);
     margin-left: 10px;
@@ -82,7 +113,7 @@ body {
     display: grid;
     grid-template-areas: "bottomleft bottomright";
     grid-template-columns: 1fr 2fr;
-    padding: 20px;
+    margin: 10px;
 }
 
 
@@ -104,8 +135,3 @@ body {
     padding: 20px;
 }
 
-
-
-footer {
-    grid-area: footer;
-}
