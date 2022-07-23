@@ -157,31 +157,38 @@ footer {
 
 @media screen and (max-width: 1000px) {
 
+    .container {
+        display: grid;
+        grid-template-areas:
+            "left middlespot right";
+        grid-template-columns: 1fr 3fr 1fr;
+        }
+
     .main {
-        display: table-column;
-        max-width: 375px;
+        grid-area: middlespot;
+        display: inline-block;
+       /* justify-content: center;*/
+       /* max-width: 375px;*/
+        max-height: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
         }
 
     .sideMain {
-        display: inline-block;
-        justify-self: center;
         background-color: hsl(0, 0%, 100%);
         color: hsl(219, 29%, 14%);
-        max-width: 250px;
         border-radius: 15px;
-        margin: 5px;
+        max-width: 250px;
+        
         }
 
     .topMain {
         display: inline-block;
+       /* justify-content: center;*/
         }
 
 
     .leftTop {
-        display: inline-block;
-        justify-self: center;
         color: hsl(0, 0%, 100%);
         background-color: hsl(263, 55%, 52%);
         border-radius: 15px;
@@ -189,17 +196,41 @@ footer {
         background-image: url('/images/bg-pattern-quotation.svg');
         background-repeat: no-repeat;
         background-position: right top;
-        margin: 5px;
+        margin-top: 10;
+        margin-bottom: 10px;
+        padding: 20px;
         }
     
     .rightTop {
-        display: inline-block;
         color: hsl(0, 0%, 100%);
         background-color: hsl(217, 19%, 35%);
         border-radius: 15px;
-        min-width: 250px;
-        max-width: 375px;
-        margin: 5px;
+        max-width: 250px;
+        margin-top: 10;
+        padding: 10px;
         }
 
+
+    .bottomMain {
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .leftBottom {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(219, 29%, 14%);
+        border-radius: 15px;
+        max-width: 250px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .rightBottom {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(219, 29%, 14%);
+        border-radius: 15px;
+        max-width: 250px;
+        margin-top: 15px;
+        padding: 10px;
+    }
 }
