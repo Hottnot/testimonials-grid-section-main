@@ -167,8 +167,6 @@ footer {
     .main {
         grid-area: middlespot;
         display: inline-block;
-       /* justify-content: center;*/
-       /* max-width: 375px;*/
         max-height: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -184,7 +182,6 @@ footer {
 
     .topMain {
         display: inline-block;
-       /* justify-content: center;*/
         }
 
 
@@ -198,7 +195,7 @@ footer {
         background-position: right top;
         margin-top: 10;
         margin-bottom: 10px;
-        padding: 20px;
+        
         }
     
     .rightTop {
@@ -207,13 +204,12 @@ footer {
         border-radius: 15px;
         max-width: 250px;
         margin-top: 10;
-        padding: 10px;
         }
 
 
     .bottomMain {
         display: inline-block;
-        justify-content: center;
+       /* justify-content: center;*/
     }
 
     .leftBottom {
@@ -221,8 +217,8 @@ footer {
         color: hsl(219, 29%, 14%);
         border-radius: 15px;
         max-width: 250px;
-        margin: 5px;
-        padding: 10px;
+        margin-bottom: 10px;
+        
     }
 
     .rightBottom {
@@ -231,6 +227,6 @@ footer {
         border-radius: 15px;
         max-width: 250px;
         margin-top: 15px;
-        padding: 10px;
+   
     }
 }
